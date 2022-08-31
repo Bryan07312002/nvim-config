@@ -29,6 +29,3 @@ vim.cmd([[
   colorscheme onedark
 ]])
 
---for status bar
-vim.cmd([[ let extension = expand('%:e') ]])
-

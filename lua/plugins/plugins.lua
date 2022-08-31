@@ -1,4 +1,4 @@
-  vim.cmd [[packadd packer.nvim]]
+vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
@@ -8,13 +8,12 @@ return require('packer').startup(function()
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
-  use 'tamton-aquib/staline.nvim'  
   use 'kyazdani42/nvim-web-devicons'
+  use 'ryanoasis/vim-devicons'
   use 'lukas-reineke/indent-blankline.nvim'
-  --use 'nvim-colorizer.lua'
   use 'tpope/vim-surround'
   use 'windwp/nvim-autopairs'
-  
+  use 'tamton-aquib/staline.nvim'
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
@@ -22,9 +21,15 @@ return require('packer').startup(function()
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
   use 'saadparwaiz1/cmp_luasnip'
+  use 'nvim-treesitter/nvim-treesitter'
   use 'L3MON4D3/LuaSnip'
   use 'rafamadriz/friendly-snippets'
   use 'ray-x/lsp_signature.nvim'
   use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
   use 'onsails/lspkind-nvim'
+  use 'NvChad/nvim-colorizer.lua'
+  use 'xiyaowong/nvim-transparent'
+  use 'winston0410/range-highlight.nvim'
+  use 'kyazdani42/nvim-tree.lua'
+  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
 end)
