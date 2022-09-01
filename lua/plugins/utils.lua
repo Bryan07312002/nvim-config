@@ -8,7 +8,6 @@ require'nvim-web-devicons'.setup {
      name = "Zsh"
    }
   };
-
   default = true;
 }
 require'nvim-web-devicons'.get_icons()
@@ -82,43 +81,6 @@ require("transparent").setup({
   exclude = {}, -- table: groups you don't want to clear
 })
 
--- require("range-highlight").setup {
---   highlight = "Visual",
---   highlight_with_out_range = {
---     d = true,
---     delete = true,
---     m = true,
---     move = true,
---     y = true,
---     yank = true,
---     c = true,
---     change = true,
---     j = true,
---     join = true,
---     ["<"] = true,
---     [">"] = true,
---     s = true,
---     subsititue = true,
---     sno = true,
---     snomagic = true,
---     sm = true,
---     smagic = true,
---     ret = true,
---     retab = true,
---     t = true,
---     co = true,
---     copy = true,
---     ce = true,
---     center = true,
---     ri = true,
---     right = true,
---     le = true,
---     left = true,
---     sor = true,
---     sort = true
---   }
--- }
-
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
   view = {
@@ -139,3 +101,5 @@ require("nvim-tree").setup({
 
 vim.opt.termguicolors = true
 require("bufferline").setup{}
+
+require('gitsigns').setup()
