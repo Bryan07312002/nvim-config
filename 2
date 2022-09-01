@@ -1,4 +1,4 @@
--- For web Icons
+-- -- For web Icons
 require'nvim-web-devicons'.setup {
   override = {
    zsh = {
@@ -15,21 +15,20 @@ require'nvim-web-devicons'.get_icons()
 
 require "staline".setup {
   sections = {
-    left = {' ','-mode',' ', 'lsp' },
-    mid = {'file_name', 'branch'},
-    right = {'-line_column' }
+    left = { ' ', 'mode', ' ', 'branch', ' ', 'lsp' },
+    mid = {},
+    right = {'file_name', 'line_column' }
   },
   mode_colors = {
-    n = "#2bbb4f",
-    i = "#986fec",
-    c = "#e27d60",
-    v = "#4799eb",   -- etc..
+    i = "#d4be98",
+    n = "#84a598",
+    c = "#8fbf7f",
+    v = "#fc802d",
   },
   defaults = {
-    true_colors = false,
+    true_colors = true,
     line_column = " [%l/%L] :%c  ", 
-    branch_symbol = " ",
-    fg="black",
+    branch_symbol = " "
   }
 }
 

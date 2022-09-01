@@ -2,34 +2,40 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
+---- Icons
   use 'terroo/vim-simple-emoji'
-  use 'navarasu/onedark.nvim'
-  use {
-    'nvim-telescope/telescope.nvim',
-    requires = { {'nvim-lua/plenary.nvim'} }
-  }
-  use 'kyazdani42/nvim-web-devicons'
   use 'ryanoasis/vim-devicons'
-  use 'lukas-reineke/indent-blankline.nvim'
-  use 'tpope/vim-surround'
-  use 'windwp/nvim-autopairs'
+  use 'kyazdani42/nvim-web-devicons'
+---- Themes
+  use 'navarasu/onedark.nvim'
+---- User Experience
   use 'tamton-aquib/staline.nvim'
-  use 'neovim/nvim-lspconfig'
-  use 'hrsh7th/nvim-cmp'
+  use 'NvChad/nvim-colorizer.lua'
+  use 'xiyaowong/nvim-transparent'
+  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+  use 'kyazdani42/nvim-tree.lua'
+-- Completition
+  use 'windwp/nvim-autopairs'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
   use 'saadparwaiz1/cmp_luasnip'
+  use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
+-- LSP
+  use 'neovim/nvim-lspconfig'
+  use 'ray-x/lsp_signature.nvim'
+  use 'onsails/lspkind-nvim'
+-- Utils
+  use 'winston0410/range-highlight.nvim'
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+  use 'lukas-reineke/indent-blankline.nvim'
+  use 'tpope/vim-surround'
   use 'nvim-treesitter/nvim-treesitter'
   use 'L3MON4D3/LuaSnip'
   use 'rafamadriz/friendly-snippets'
-  use 'ray-x/lsp_signature.nvim'
-  use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
-  use 'onsails/lspkind-nvim'
-  use 'NvChad/nvim-colorizer.lua'
-  use 'xiyaowong/nvim-transparent'
-  use 'winston0410/range-highlight.nvim'
-  use 'kyazdani42/nvim-tree.lua'
-  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
 end)
