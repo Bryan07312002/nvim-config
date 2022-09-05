@@ -19,7 +19,7 @@ return require('packer').startup(function()
     'goolord/alpha-nvim',
     requires = { 'kyazdani42/nvim-web-devicons' },
     config = function ()
-      require'alpha'.setup(require'alpha.themes.startify'.config)
+      require'alpha'.setup(require'plugins.dash'.config)
     end
   }
 ---- Completition
@@ -48,4 +48,5 @@ return require('packer').startup(function()
   use {'nvim-telescope/telescope.nvim',requires = {{'nvim-lua/plenary.nvim'}}}
   use 'lukas-reineke/indent-blankline.nvim'
   use 'tpope/vim-surround'
+  use 'lewis6991/impatient.nvim'
 end)
