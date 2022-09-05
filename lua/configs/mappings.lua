@@ -30,9 +30,16 @@ vim.cmd([[
 
 --Change buffer
 vim.cmd([[ nnoremap <C-l> :bn<CR> ]])
-vim.cmd([[ nnoremap <C-h> :bf<CR> ]])
+vim.cmd([[ nnoremap <C-h> :bp<CR> ]])
 
 --Close buffer
-vim.cmd([[ nnoremap <C-k> :bdelete<CR> ]])
+vim.cmd([[ nnoremap <C-k>k :bdelete<CR> ]])
+
+-- Split
+vim.cmd([[ nnoremap <Space>o :vsplit ./<CR> ]])
 
 -- Telescope
+vim.cmd([[ nnoremap <Space>ff :Telescope find_files <CR> ]])
+
+-- Find word
+vim.cmd([[ nnoremap <C-f> :? ]])

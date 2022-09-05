@@ -29,3 +29,4 @@ vim.cmd([[
   colorscheme onedark
 ]])
 
+require('configs.line-numbers')
