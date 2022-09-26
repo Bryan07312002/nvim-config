@@ -16,6 +16,17 @@ packer.startup({ function(use)
   --  branch = 'lualine'
   -- }
 
+--- Surround
+  --use({
+    --"kylechui/nvim-surround",
+    --tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+    --config = function()
+    --  require("nvim-surround").buffer_setup({
+          -- Configuration here, or leave empty to use defaults
+   --   })
+  --  end
+ -- })
+
   -- ColorSchemes
   use {'tiagovla/tokyodark.nvim', opt=true}
   use 'navarasu/onedark.nvim'

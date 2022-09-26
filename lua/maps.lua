@@ -7,7 +7,7 @@ keymap.set('n', '<C-s>', ':w<CR>')
 keymap.set('v', '<C-s>', '<Esc>:w<CR>')
 keymap.set('i', '<C-s>', '<Esc>:w<CR>')
 
-keymap.set('n', 'q', ':wq<CR>')
+keymap.set('n', 'q', ':q<CR>')
 
 -- Increment/decrement
 keymap.set('n', '+', '<C-a>')
