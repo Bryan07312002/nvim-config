@@ -1,5 +1,5 @@
 ## Bryan neovim configuration
-This is my neovim configuration, heavily inspired by ThePrimegen configs.
+This is my neovim configuration, heavily inspired by ThePrimeagen configs.
 
 ### Prerequisite
 - [ripgrep](https://github.com/BurntSushi/ripgrep).
