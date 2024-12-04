@@ -11,5 +11,5 @@ Just clone this repository in you nvim config path, normaly at `~/.config/nvim`
 
 example:
 ``` sh
-    git clone https://github.com/Bryan07312002/nvim-config.git ~/.config/nvim
+git clone https://github.com/Bryan07312002/nvim-config.git ~/.config/nvim
 ```
