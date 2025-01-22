@@ -37,6 +37,21 @@ return {
                     }
                 end,
 
+                volar = function()
+                    local lspconfig = require('lspconfig')
+
+                    lspconfig.volar.setup {
+                        -- add filetypes for typescript, javascript and vue
+                        filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
+                        init_options = {
+                            vue = {
+                                -- disable hybrid mode
+                                hybridMode = false,
+                            },
+                        },
+                    }
+                end,
+
                 zls = function()
                     local lspconfig = require("lspconfig")
                     lspconfig.zls.setup({
@@ -51,7 +66,6 @@ return {
                     })
                     vim.g.zig_fmt_parse_errors = 0
                     vim.g.zig_fmt_autosave = 0
-
                 end,
                 ["lua_ls"] = function()
                     local lspconfig = require("lspconfig")

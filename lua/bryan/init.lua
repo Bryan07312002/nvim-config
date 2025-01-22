@@ -29,7 +29,7 @@ autocmd('TextYankPost', {
     end,
 })
 
-autocmd({"BufWritePre"}, {
+autocmd({ "BufWritePre" }, {
     group = ThePrimeagenGroup,
     pattern = "*",
     command = [[%s/\s\+$//e]],
@@ -46,6 +46,10 @@ autocmd('BufEnter', {
     end
 })
 
+local lsp_conficts, _ = pcall(vim.api.nvim_get_autocmds, { group = "LspAttach_conflicts" })
+if not lsp_conficts then
+    vim.api.nvim_create_augroup("LspAttach_conflicts", {})
+end
 
 autocmd('LspAttach', {
     group = ThePrimeagenGroup,
