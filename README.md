@@ -18,7 +18,7 @@ A modern Neovim setup optimized for my development workflow, inspired by ThePrim
 
 ## Prerequisites 🛠️
 
-- Neovim (v0.9+ recommended)
+- Neovim (v0.11+ recommended)
 - [ripgrep](https://github.com/BurntSushi/ripgrep) (`brew install ripgrep` or `sudo apt install ripgrep`)
 - Lua 5.1 (`sudo apt install lua5.1` or equivalent for your OS)
 - Luarocks (`sudo apt install luarocks` or equivalent)
